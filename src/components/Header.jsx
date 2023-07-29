@@ -1,6 +1,8 @@
 import React from "react";
 // import logo
 import logo from "/assets/logo.svg";
+//Links
+import { Link } from "react-scroll";
 const Header = () => {
   return (
     <header className=" py-8">
@@ -11,7 +13,9 @@ const Header = () => {
             <img src={logo} alt="" />
           </a>
           {/* button  */}
-          <button className=" btn btn-sm">Work with me</button>
+          <Link to="contact">
+            <button className=" btn btn-sm">Work with me</button>
+          </Link>
         </div>
       </div>
     </header>
