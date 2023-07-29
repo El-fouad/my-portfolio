@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 //img
 import pic1 from "/assets/portfolio-img1.png";
+import pic2 from "/assets/portfolio-img2.png";
+import pic3 from "/assets/portfolio-img3.png";
 
 const Work = () => {
   return (
@@ -76,7 +78,7 @@ const Work = () => {
               {/* amg */}
               <img
                 className=" group-hover:scale-125 transition-all duration-500"
-                src={pic1}
+                src={pic2}
                 alt=""
               />
               {/* pretitle */}
@@ -102,7 +104,7 @@ const Work = () => {
               {/* amg */}
               <img
                 className=" group-hover:scale-125 transition-all duration-500"
-                src={pic1}
+                src={pic3}
                 alt=""
               />
               {/* pretitle */}
