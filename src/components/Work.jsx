@@ -28,7 +28,12 @@ const Work = () => {
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Perferendis minima reprehenderit id dolorum
               </p>
-              <button className=" btn btn-sm">View all projects</button>
+              <button
+                className=" btn btn-sm"
+                onclick="window.location.href='https://github.com/El-fouad'"
+              >
+                View all projects
+              </button>
             </div>
 
             {/* imgs */}
