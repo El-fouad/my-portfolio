@@ -2,13 +2,21 @@ import React from "react";
 // images
 import image from "/assets/avatar.svg";
 // icons
-import { FaGithub, FaYoutube, FaDribbble } from "react-icons/fa";
+import {
+  FaGithub,
+  FaYoutube,
+  FaDribbble,
+  FaInstagram,
+  FaLinkedin,
+} from "react-icons/fa";
 // type animation
 import { TypeAnimation } from "react-type-animation";
 // motion
 import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "../variants";
+//Links
+import { Link } from "react-scroll";
 
 const Banner = () => {
   return (
@@ -60,9 +68,10 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className=" flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
-              <button className="btn btn-lg">Contact me </button>
+              <Link to="contact">
+                <button className="btn btn-lg">Contact me </button>
+              </Link>
               <a href="" className=" text-gradient btn-link">
-                {" "}
                 My Portfolio
               </a>
             </motion.div>
@@ -74,14 +83,20 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className=" flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
-              <a href="">
-                <FaYoutube />
+              <a
+                href="https://instagram.com/elhamdaoui_fouad?igshid=MzNlNGNkZWQ4Mg=="
+                target="_blank"
+              >
+                <FaInstagram />
               </a>
-              <a href="">
+              <a href="https://github.com/El-fouad" target="_blank">
                 <FaGithub />
               </a>
-              <a href="">
-                <FaDribbble />
+              <a
+                href="https://www.linkedin.com/in/fouad-el-hamdaoui-45b41719a"
+                target="_blank"
+              >
+                <FaLinkedin />
               </a>
             </motion.div>
           </div>
