@@ -18,3 +18,8 @@ Screenshots:
 ![Screenshot (41)](https://github.com/El-fouad/my-portfolio/assets/93879709/ac86f62d-b5e5-4633-ac0d-f7c3e12c3cdd)
 
 ![Screenshot (42)](https://github.com/El-fouad/my-portfolio/assets/93879709/2ad55852-6386-4e7e-a8dd-2300f11d37e8)
+
+
+RESOURCES :
+
+this video : https://www.youtube.com/watch?v=Hps-XPN1GeE&t=852s
