@@ -32,7 +32,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className=" text-[45px] font-bold leading-[0.8] lg:text-[110px]"
             >
-            EL<span> FOUAD</span>
+              EL<span> FOUAD</span>
             </motion.h1>
             <motion.div
               variants={fadeIn("up", 0.4)}
@@ -58,8 +58,8 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className=" mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam
-              deserunt doloribus,
+              I am a skilled Full Stack Developer with expertise in the MERN
+              stack. With 2 years of experience
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.6)}

@@ -39,15 +39,16 @@ const About = () => {
             <h2 className="h2 text-accent">About me.</h2>
             <h3 className="h3 mb-4">I'm a Full-Stack Developer Senoir .</h3>
             <p className="mb-6">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Similique beatae quasi dignissimos eaque sit vitae placeat rem
-              maxime architecto cum?
+              My technical skillset includes React.js, Node.js, MongoDB,
+              Express.js, HTML/CSS, and JavaScript. I am also familiar with
+              various development tools and libraries, such as Git, Redux, and
+              Material-UI & Tailwind.
             </p>
             {/* stats */}
             <div className="flex gap-x-6 mb-12 lg:gap-x-10">
               <div>
                 <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {InView ? <CountUp start={0} end={13} duration={3} /> : null}
+                  {InView ? <CountUp start={0} end={2} duration={3} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
                   Years of <br />
@@ -57,7 +58,7 @@ const About = () => {
               <div>
                 <div className="text-[40px] font-tertiary text-gradient mb-2">
                   {InView ? <CountUp start={0} end={10} duration={3} /> : null}
-                  K+
+                  +
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
                   Projects <br />
@@ -70,7 +71,7 @@ const About = () => {
               text-gradient mb-2"
                 >
                   {InView ? <CountUp start={0} end={8} duration={3} /> : null}
-                  K+
+                  +
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
                   Satisfied <br />

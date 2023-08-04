@@ -27,8 +27,8 @@ const Work = () => {
                 Work.
               </h2>
               <p className="max-w-sm mb-16">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Perferendis minima reprehenderit id dolorum
+                My passion for coding and problem-solving drives me to
+                constantly learn and improve my skills.
               </p>
               <button
                 className=" btn btn-sm"
@@ -69,7 +69,7 @@ const Work = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className=" flex-1 flex flex-col gap-y-10"
+            className=" flex-1 flex flex-col justify-between gap-y-10"
           >
             {/* images */}
             <div className=" group relative overflow-hidden border-2 border-white/50 rounded-xl">
