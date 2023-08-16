@@ -1,9 +1,33 @@
-import React from "react";
+// useRef
+import React, { useRef } from "react";
 // motion
 import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "../variants";
+// @emailjs/browser
+import emailjs from "@emailjs/browser";
+
+
 const Contact = () => {
+  const form = useRef();
+  const serviceId = process.env.VITE_SERVICE_ID;
+  const templateId = process.env.VITE_TEMPLATE_ID;
+  const publicKey = process.env.VITE_PUBLIC_KEY;
+  console.log(serviceId);
+  const sendEmail = (e) => {
+    e.preventDefault();
+    console.log("tesss");
+    emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+    e.target.reset();
+  };
+
   return (
     <div className="section py-16 lg:secttion" id="contact">
       <div className="container mx-auto">
@@ -34,26 +58,33 @@ const Contact = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1 border rounded-2xl flex flex-col gap-y-6 pb-12 p-6
             items-start"
+            ref={form}
+            onSubmit={sendEmail}
           >
             <input
               type="text"
               className=" bg-transparent border-b py-3 outline-none w-full
              placeholder:text-white focus:border-accent transition-all"
               placeholder="Your name "
+              name="user_name"
             />
             <input
               type="text"
               className=" bg-transparent border-b py-3 outline-none w-full
              placeholder:text-white focus:border-accent transition-all"
               placeholder="Your email "
+              name="user_email"
             />
             <textarea
               className=" bg-transparent border-b py-12 outline-none
               w-full placeholder:text-white focus:border-accent transition-all
               resize-none mb-12"
               placeholder="Your message"
+              name="message"
             ></textarea>
-            <button className=" btn btn-lg ">Send Message</button>
+            <button type="submit" className=" btn btn-lg ">
+              Send Message
+            </button>
           </motion.form>
         </div>
       </div>
