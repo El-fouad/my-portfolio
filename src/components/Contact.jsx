@@ -13,17 +13,14 @@ const Contact = () => {
   const serviceId = process.env.VITE_SERVICE_ID;
   const templateId = process.env.VITE_TEMPLATE_ID;
   const publicKey = process.env.VITE_PUBLIC_KEY;
-  console.log(serviceId);
-  console.log(publicKey);
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log("tesss");
     emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
       (result) => {
         console.log(result.text);
       },
       (error) => {
-        console.log(error.text);
+        console.log("error =>",error.text);
       }
     );
     e.target.reset();
