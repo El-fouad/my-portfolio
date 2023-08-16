@@ -14,6 +14,7 @@ const Contact = () => {
   const templateId = process.env.VITE_TEMPLATE_ID;
   const publicKey = process.env.VITE_PUBLIC_KEY;
   console.log(serviceId);
+  console.log(publicKey);
   const sendEmail = (e) => {
     e.preventDefault();
     console.log("tesss");
